@@ -1,0 +1,524 @@
+/* --- Основные стили страницы --- */
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+/* --- Контейнер, ограничивающий ширину содержимого --- */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* --- Фоновое изображение для шапки --- */
+.header-img {
+  background-image: url(../images/pasaric.png);
+  background-size: cover;
+  height: 500px;
+}
+
+/* --- Шапка сайта --- */
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 48px;
+  padding-bottom: 25px;
+}
+
+/* --- Навигационное меню --- */
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 68.5%;
+}
+
+/* --- Ссылки в навигации --- */
+.header__nav-list {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0;
+  gap: 80px;
+}
+
+.header__nav-item a {
+  font-weight: 400;
+  font-size: 25px;
+  color: rgb(94, 122, 71);
+  text-decoration: none;
+  transition: 1s;
+}
+
+.header__nav-item a:hover {
+  color: rgb(62, 62, 62);
+}
+
+/* --- Кнопка (вероятно, иконка) --- */
+.header__button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  gap: 10px;
+  cursor: pointer;
+}
+
+/* --- Блок с аватаром в шапке --- */
+.header__avatar {
+  position: absolute;
+  width: auto;
+  height: 385px;
+  right: 320px;
+  top: 60px;
+}
+
+/* --- Описание рядом с аватаром --- */
+.header__scription {
+  color: rgb(62, 62, 62);
+  position: absolute;
+  max-width: 223px;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  right: 130px;
+  top: 120px;
+}
+
+/* --- Заголовки и описания блока "Обо мне" --- */
+.header__name {
+  color: rgb(62, 62, 62);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 120px;
+  margin-bottom: 5px;
+}
+
+.header__profession {
+  color: rgb(94, 122, 71);
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 110%;
+  text-transform: uppercase;
+  max-width: 510px;
+  margin: 0;
+}
+
+/* --- Блок специализации --- */
+.specialization {
+  background: rgb(165, 188, 147);
+  position: relative;
+  height: 300px;
+  bottom: 56px;
+}
+
+/* --- Элементы блока специализации --- */
+.specialization__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.specialization__item {
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  width: 281px;
+  height: 220px;
+  margin-top: 40px;
+}
+
+.specialization__title {
+  color: rgb(94, 122, 71);
+  max-width: 170px;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 110%;
+  padding-left: 30px;
+  padding-top: 120px;
+}
+
+/* --- Навыки (Skills) --- */
+.skills {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.skills__item {
+  display: flex;
+  gap: 240px;
+}
+
+.skills__group {
+  display: block;
+}
+
+.skills__title {
+  color: rgb(62, 62, 62);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 61px;
+  margin-bottom: 50px;
+}
+
+.skills__tool {
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.skills__icon {
+  width: 85px;
+  height: 85px;
+}
+
+.skills__description {
+  color: rgb(62, 62, 62);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 10px 15px;
+}
+
+.skills__underline {
+  position: absolute;
+  width: 182px;
+  height: 15px;
+  left: 205px;
+  margin-top: 70px;
+}
+
+.skills__elipse {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  box-sizing: border-box;
+  border-radius: 100%;
+  border: 1px solid rgb(165, 188, 147);
+}
+
+.skills__word {
+  color: rgb(62, 62, 62);
+  position: relative;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 140px;
+  left: 90px;
+}
+
+.skills__elipse-object {
+  position: absolute;
+  background-image: url(../images/ellipse.png);
+  background-repeat: no-repeat;
+  background-position: 45%;
+  width: 34px;
+  height: 34px;
+  box-sizing: border-box;
+  border-radius: 100%;
+  border: 1px solid rgb(165, 188, 147);
+}
+
+/* --- Раздел "Портфолио" --- */
+.portfolio {
+  background: rgb(165, 188, 147);
+  position: relative;
+  height: 815px;
+  margin-bottom: 70px;
+}
+
+.portfolio__title {
+  padding-top: 85px;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 61px;
+  margin-bottom: 70px;
+}
+
+/* --- Карточки в портфолио --- */
+.portfolio__item {
+  display: flex;
+  gap: 15px;
+}
+
+.portfolio__window {
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  width: 375px;
+  height: 500px;
+}
+
+/* --- Подвал (footer) --- */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.footer__title {
+  color: rgb(94, 122, 71);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 61px;
+  margin-bottom: 20px;
+}
+
+.footer-description {
+  color: rgb(62, 62, 62);
+  max-width: 425px;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.footer__button {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+
+  border-radius: 5px;
+  border: transparent;
+  background: rgb(94, 122, 71);
+  position: absolute;
+  width: 281px;
+  height: 92px;
+  right: 150px;
+  margin-top: 50px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.footer__button:hover {
+  background-color: rgb(62, 62, 62);
+}
+
+/* --- Кнопка "Наверх" (scroll-to-top) --- */
+.button-up {
+  background: rgb(94, 122, 71);
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.button-up:hover {
+  background: rgb(62, 62, 62);
+}
+
+.button-up.hidden {
+  opacity: 0;
+}
+
+.button-up.visible {
+  opacity: 1;
+}
+
+/* --- Адаптация для планшетов (ширина экрана до 1024px) --- */
+@media (max-width: 1024px) {
+
+  .container {
+    max-width: 90%;
+  }
+
+  /* Шапка */
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+  }
+
+  .header-nav {
+    gap: 40px;
+  }
+
+  .header-avatar {
+    height: 300px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  /* Описание */
+  .scription,
+  .title,
+  .description {
+    text-align: center;
+    right: auto;
+  }
+
+  /* Специализация */
+  .specialization-block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .specialization-block-window {
+    width: 90%;
+    height: 180px;
+  }
+
+  /* Навыки */
+  .skills-item {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .skills-underline {
+    display: none;
+  }
+
+  /* Портфолио */
+  .portfolio-window-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Подвал */
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-button {
+    position: relative;
+    right: auto;
+  }
+}
+
+/* --- Адаптация для мобильных устройств (ширина экрана до 768px) --- */
+@media (max-width: 768px) {
+
+  /* Меню */
+  .header-nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Аватар */
+  .header-avatar {
+    height: 250px;
+  }
+
+  /* Специализация */
+  .specialization-block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .specialization-block-window {
+    width: 90%;
+    height: 180px;
+  }
+
+  /* Навыки */
+  .skills-title {
+    font-size: 35px;
+  }
+
+  .skills-word {
+    left: 0;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .skills-avatar {
+    width: 250px;
+  }
+
+  /* Портфолио */
+  .portfolio-title {
+    font-size: 40px;
+  }
+
+  .portfolio-window {
+    width: 90%;
+    height: auto;
+  }
+
+  /* Подвал */
+  .footer-title {
+    font-size: 35px;
+  }
+
+  .footer-button {
+    width: 100%;
+  }
+}
+
+/* --- Адаптация для маленьких мобильных устройств (ширина экрана до 480px) --- */
+@media (max-width: 480px) {
+
+  /* Меню */
+  .header-nav {
+    font-size: 18px;
+  }
+
+  /* Аватар */
+  .header-avatar {
+    height: 200px;
+  }
+
+  /* Описание */
+  .scription,
+  .title,
+  .description {
+    font-size: 20px;
+  }
+
+  /* Специализация */
+  .specialization-block-title {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 100px;
+  }
+
+  /* Навыки */
+  .skills-title {
+    font-size: 30px;
+  }
+
+  .skills-word {
+    font-size: 20px;
+  }
+
+  .skills-avatar {
+    width: 200px;
+    height: auto;
+  }
+
+  /* Портфолио */
+  .portfolio-title {
+    font-size: 30px;
+  }
+
+  /* Подвал */
+  .footer-title {
+    font-size: 28px;
+  }
+
+  .footer-description {
+    font-size: 20px;
+  }
+
+  .footer-button {
+    height: 60px;
+    font-size: 20px;
+  }
+
+  /* Кнопка "Наверх" */
+  .button-up {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+
